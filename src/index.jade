@@ -14,47 +14,123 @@ html
   meta(name="viewport", content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, minimal-ui")
 
   link(rel="stylesheet", href="assets/styles/main.css", type="text/css")
+  link(rel="stylesheet", href="assets/styles/reset.css", type="text/css")
 
   body
 
-  div.wrapper
+    div.nav
+      div.wrapper
+        a(class="navlogoPos" href="/")
+          img(class="logoNav" src="assets/images/logos/navLogo.png" alt="Personal Logo")
+          img(class="logoNav" src="assets/images/logos/navLogoWhite.png" alt="Personal Logo")
+        ul
 
-    header.header
+          li: a(href="/mywork") My Works
 
-      h1 Hello World
+          li: a(href="/about") About
 
-      ul.nav
+          li: a(href="/contact") Contact
 
-        li: a(href="/") Home
-
-        li: a(href="/MyWork") My Works
-
-        li: a(href="/about") About
-
-        li: a(href="/contact") Contact
+    //- header.header
+      
 
     div.main
 
     footer.footer
 
       p Copyright &copy; Fatemah Manji 2014
-      ul.footer
-        li: img 
-            a(href="http://ca.linkedin.com/pub/fatemah-manji/3a/23b/26/")
+      //- ul.socialMedia
+      //-   li: a(href="http://ca.linkedin.com/pub/fatemah-manji/3a/23b/26/") 
+      //-     img(href="http://placehold.it/350x150")
+           
 
   // -----------------------------
   // Templates
   // -----------------------------
 
   script#home(type="text/template").
-    <div class="page home">put stuff here
+    <div class="page home">
+      <div class="wrapper">
+        <div class="logo">
+          <img class="logo2" src="assets/images/logos/logo.svg" alt="Personal Logo"/>
+        </div>
+        <div class="headText">
+          <h1>Fatemah Manji</h1>
+          <h2>Hello, I am an Interactive Designer who believes that a little color won’t hurt your design! </h2>
+          <a href="#about" class="aboutBtn">Learn More</a>
+        </div>
+      </div> 
     </div>
 
+  //- ----------------- Home Complete --------------
+
+  script#mywork(type="text/template").
+    <div class="page mywork">
+      <div class="wrapper2">
+        <div class="figure work1">
+          <img src="assets/images/logos/logo.svg"/>
+          <div class="caption">
+            <h1> The CN Tower </h1>
+            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut</p>
+          </div>
+        </div>
+
+        <div class="figure work2">
+          <img src="assets/images/logos/logo.svg"/>
+          <div class="caption">
+            <h1> The CN Tower </h1>
+            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut</p>
+          </div>
+        </div>
+
+        <div class="figure work3">
+          <img src="assets/images/logos/logo.svg"/>
+          <div class="caption">
+            <h1> The CN Tower </h1>
+            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut</p>
+          </div>
+        </div>
+
+        <div class="figure work4">
+          <img src="assets/images/logos/logo.svg"/>
+          <div class="caption">
+            <h1> The CN Tower </h1>
+            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut</p>
+          </div>
+        </div>
+
+        <div class="figure work5">
+          <img src="assets/images/logos/logo.svg"/>
+          <div class="caption">
+            <h1> The CN Tower </h1>
+            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut</p>
+          </div>
+        </div>
+
+        <div class="figure work6">
+          <img src="assets/images/logos/logo.svg"/>
+          <div class="caption">
+            <h1> The CN Tower </h1>
+            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  //- ----------------- My work Complete --------------
+  
   script#about(type="text/template").
-    <div class="page about">{{{content}}}</div>
+    <div class="page about">
+      <h2>jcksdkjvslv afvvopfjv efvoivirwvuwruvhuiviu  vsdhvi hvihwi oivoisFVIOHVHVV OOI DSHVOIs hvohvoisVSVHIFSHVOSHV SIOIOAO</h2>
+    </div>
+
+  //- ----------------- about Complete --------------
 
   script#contact(type="text/template").
     <div class="page contact">{{{content}}}</div>
+
+  //- ----------------- contact Complete --------------
+
 
   // -----------------------------
   // Libraries

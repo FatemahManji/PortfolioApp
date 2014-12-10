@@ -1,9 +1,9 @@
 {
-  "name": "spa-boilerplate",
-  "description": "Single Page Application Boilerplate Project",
+  "name": "Fatemah Manji",
+  "description": "Single Page portfolio Project",
   "version": "0.0.0",
-  "homepage": "http://darcyclarke.me",
-  "author": "Darcy Clarke",
+  "homepage": "http://fatemahmanji.com",
+  "author": "Fatemah Manji",
   "main": "server.js",
   "dependencies": {
     "express": "*"

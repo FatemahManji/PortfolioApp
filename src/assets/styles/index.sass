@@ -1,4 +1,26 @@
+//---------------------------------------------
+//      FONTS
+//---------------------------------------------
+      //     Caviar Dreams    
+@font-face
+  font-family: "CaviarDreams"
+  src: url("../fonts/caviar_dreams/CaviarDreams.ttf")
 
+@font-face
+  font-family: "CaviarDreamsBold"
+  src: url("../fonts/caviar_dreams/CaviarDreamsBold.ttf")
+
+      //          RNS_Camelia             
+@font-face
+  font-family: "RNS_Camelia"
+  src: url("../fonts/rns_camelia/RNS_Camelia.otf")
+
+      //       take_a_pebble            
+@font-face
+  font-family: "TakeAPebble"
+  src: url("../fonts/take_a_pebble/take_a_pebble.ttf")
+
+/*   ***********  END FONT FACES  **************   */
 // -----------------------------
 // Variables
 // -----------------------------
@@ -16,7 +38,7 @@ $darkColor: #333
 body
   padding: 0
   margin: 0
-  font-size: 14px
+  font-size: 10px
   font-family: sans-serif
   color: $color
 
@@ -25,6 +47,30 @@ a
   display: inline-block
   color: $color
 
+.wrapper
+  width: 60%
+  margin: 0 auto
+
+.wrapper2
+  width:50%
+  margin: 0 auto
+// -----------------------------
+// tag font-family   , #mainNav ul li a, h3, input[type="submit"], .workBtn,
+// -----------------------------
+
+.headText h1
+  font-family: TakeAPebble, cursive
+  font-size: 5em
+  padding-bottom: 5%
+  color:white
+
+.headText h2,
+.aboutBtn
+  font-family: RNS_Camelia, Times, serif
+
+h4, p, input[type="text"]
+  font-family: CaviarDreams, Helvetica, sans-serif
+
 // -----------------------------
 // App Specific
 // -----------------------------
@@ -32,51 +78,129 @@ a
 .header, .main, .footer
   width: 100%
   display: block
-  clear: both
-  float: left
+  //clear: both
+  // float: left
+
+// -----------------------------
+// Navigation
+// -----------------------------
+.nav
+  background:black
+  opacity:0.9
+  height:75px
+  position:fixed
+  width:100%
+  z-index:500
+
+.navlogoPos
+  float:left
+  padding-top:8px;
+
+.logoNav
+  position:fixed
+
+.wrapper
+  ul
+    position:relative
+    left:200px
+    li
+      display: inline-block
+      list-style: none
+    a
+      color:white
+      padding: 30px 80px
+      font-size:18px
+// -----------------------------
+// home styling
+// -----------------------------
+.home
+  height: 800px
+  width:100%
+  background-image: url(../images/backgroundPattern.png)
+
+.headText, .logo
+  padding-top:17%
+  float:left
+
+.logo2
+  width: 100%
+
+.headText
+  margin: 10% 3%
+  width:50%
+
+.aboutBtn
+  padding: 3%
+  border: 2px white solid
+  margin-top: 8.5%
+
+// -----------------------------
+// my work images
+// -----------------------------
+.mywork
+  background:#EFEFEF
+  height:800px
+  /*height:auto*/
+  display:block
+  float:none
+  padding-top:120px
+
+.figure
+  width:200px
+  height:200px
+  border:2px solid #000000
+  position:relative
+  overflow: hidden
+  float:left
+  margin:20px 40px 20px 0
+
+.caption
+  position:absolute
+  background: rgba(0,0,0,0.5)
+  color:#000
+  text-align:center
+  bottom: -85px
+    /* put transition here, give normal and hover both 2 seconds transition */
+  transition: all, 0.5s
+
+.figure:hover .caption
+  bottom:-5px
+  /* put transition here, give hover only for 2 seconds transition */
+  transition: all, 0.5s
+
+
+
+// .navLogoSvg
+//  color:white     
+
+
 
 // -----------------------------
 // Header
 // -----------------------------
 
 .header
-  padding: 20px
-  border-bottom: 1px solid $lightColor
 
-// -----------------------------
-// Navigation
-// -----------------------------
-
-.nav
-  margin: 0
-  padding: 0
-
-  li
-    margin: 0
-    padding: 0
-    display: inline-block
-    list-style: none
-
-    a
-      padding: 5px 10px
 
 // -----------------------------
 // Main
 // -----------------------------
 
 .main
-  padding: 20px
-  border-bottom: 1px solid $lightColor
+  height:800px
 
 // -----------------------------
 // Footer
 // -----------------------------
 
 .footer
-  padding: 20px
-
-  p
-    margin: 0
-    padding: 0
-    font-size: 12px
+  background:#00ADEE
+  color:white
+  text-align:center
+  padding: 40px
+  height:20px
+  //p
+    //margin: 0
+   // padding: 0
+    //font-size: 12px
 

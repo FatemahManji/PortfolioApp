@@ -14,6 +14,7 @@ jQuery(function($) {
     // Our Routes
     routes: {
       '' : 'home',
+      'mywork': 'mywork',
       'about': 'about',
       'contact': 'contact'
     },
@@ -24,6 +25,11 @@ jQuery(function($) {
       App.views['home'].render();
     },
 
+    // mywork Route
+    mywork: function() {
+      console.log('Navigating to Mywork Page');
+      App.views['mywork'].render();
+    },
     // About Route
     about: function() {
       console.log('Navigating to About Page');
@@ -50,6 +56,7 @@ jQuery(function($) {
     // Setup views
     this.views = {
       home: new HomeView(),
+      mywork: new MyworkView(),
       about: new AboutView(),
       contact: new ContactView()
     };
@@ -94,6 +101,46 @@ jQuery(function($) {
     }
 
   });
+
+  // -----------------------------
+  // Mywork View
+  // -----------------------------
+
+  var MyworkView = Backbone.View.extend({
+
+    // Our Container Element
+    el: $('.main'),
+
+    // Our template ID
+    template: '#mywork',
+
+    // Initialize View
+    initialize: function() {
+
+      // Setup our template and start our model
+      this.template = Handlebars.compile($(this.template).html());
+      this.model = new Backbone.Model({});
+
+      // Some page data
+      this.model.set({
+        content: '<h1>My work Page</h1>'
+      });
+
+    },
+
+    // Our Render Function
+    render: function() {
+
+      // Get data and render our template
+      var data = this.model.toJSON();
+      var html = this.template(data);
+
+      // Set update the containers HTML
+      $(this.el).html(html);
+    }
+
+  });
+
 
   // -----------------------------
   // About View
