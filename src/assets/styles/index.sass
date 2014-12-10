@@ -26,8 +26,10 @@
 // -----------------------------
 
 $color: #E6E7E8
-$lightColor: #efefef
+$lightBlack: #6D6E70
 $darkColor: #333
+$green: #82BC00
+$blue:#00ADEE
 
 
 // -----------------------------
@@ -86,16 +88,40 @@ a
 .wrapper2 ul li a,
 .aboutBtn,
 .workBtn,
-input[type="submit"],
+input[type="submit"]
   font-family: RNS_Camelia, Times, serif
-  font-size: 20px
+  font-size: 2em
   line-height:150%
   color:$color
 
 .caption h3,
 .caption p,
-input[type="text"]
+.aboutText p,
+input[type="text"],
+h3.swahili
   font-family: CaviarDreams, Helvetica, sans-serif
+  line-height:150%
+  font-size: 1.5em
+
+.aboutText p
+  font-size:1.5em
+  padding-bottom:10px
+
+h3.swahili
+  font-size:3em
+
+h3 span.smltext
+  font-size:0.5em
+
+p span.smltext
+  font-size:0.75em
+  color:$green
+
+
+q.quote
+  font-family: CaviarDreamsBold, Helvetica, sans-serif
+  font-size:1em
+  color:$green
 
 
 // -----------------------------
@@ -203,29 +229,31 @@ input[type="text"]
 // -----------------------------
 .aboutText
   width: 52%
-  padding-left: 2%
+  margin-top:7%
+  padding-left:3%
   float:left
+  color: grey
 
 .pic
+  margin-top:4%
   width: 37.5%
   float:left
   padding:10px
-  border:2px dotted grey
+  border:2px dotted $green
   border-radius:300px
 
 .myPic
   border: 2px solid black
   border-radius:300px
 
-
-
 .profile
-  font-size: 3.5em
+  font-size: 2em
 
-.profileName, .swahili
+.profileName
   padding-bottom: 5%
 
-
+h3.swahili
+  padding-bottom:2%
 
 
 
@@ -234,7 +262,7 @@ input[type="text"]
 // -----------------------------
 
 .footer
-  background:#00ADEE
+  background: $blue
   color:white
   text-align:center
   padding: 40px

@@ -14,61 +14,87 @@
   font-family: "TakeAPebble";
   src: url("../fonts/take_a_pebble/take_a_pebble.ttf"); }
 
-/* line 29, /Users/FatemahManji/GitHub/portfolioApp/src/assets/styles/index.sass */
+/* line 31, /Users/FatemahManji/GitHub/portfolioApp/src/assets/styles/index.sass */
 .main {
   height: 800px; }
 
-/* line 34, /Users/FatemahManji/GitHub/portfolioApp/src/assets/styles/index.sass */
+/* line 36, /Users/FatemahManji/GitHub/portfolioApp/src/assets/styles/index.sass */
 * {
   box-sizing: border-box; }
 
-/* line 37, /Users/FatemahManji/GitHub/portfolioApp/src/assets/styles/index.sass */
+/* line 39, /Users/FatemahManji/GitHub/portfolioApp/src/assets/styles/index.sass */
 body {
   font-size: 10px;
   font-family: sans-serif; }
 
-/* line 41, /Users/FatemahManji/GitHub/portfolioApp/src/assets/styles/index.sass */
+/* line 43, /Users/FatemahManji/GitHub/portfolioApp/src/assets/styles/index.sass */
 a {
   text-decoration: none;
   display: inline-block;
   color: #E6E7E8; }
 
-/* line 46, /Users/FatemahManji/GitHub/portfolioApp/src/assets/styles/index.sass */
+/* line 48, /Users/FatemahManji/GitHub/portfolioApp/src/assets/styles/index.sass */
 .wrapper {
   width: 60%;
   margin: 0 auto;
   padding-top: 10%; }
 
-/* line 51, /Users/FatemahManji/GitHub/portfolioApp/src/assets/styles/index.sass */
+/* line 53, /Users/FatemahManji/GitHub/portfolioApp/src/assets/styles/index.sass */
 .wrapper2 {
   width: 55%;
   margin: 0 auto; }
 
-/* line 58, /Users/FatemahManji/GitHub/portfolioApp/src/assets/styles/index.sass */
+/* line 60, /Users/FatemahManji/GitHub/portfolioApp/src/assets/styles/index.sass */
 .headText h1, .profile {
   font-family: TakeAPebble, cursive; }
 
-/* line 61, /Users/FatemahManji/GitHub/portfolioApp/src/assets/styles/index.sass */
+/* line 63, /Users/FatemahManji/GitHub/portfolioApp/src/assets/styles/index.sass */
 .headText h1 {
   font-size: 5em; }
 
-/* line 68, /Users/FatemahManji/GitHub/portfolioApp/src/assets/styles/index.sass */
+/* line 70, /Users/FatemahManji/GitHub/portfolioApp/src/assets/styles/index.sass */
 .headText h2, .wrapper2 ul li a, .aboutBtn, .workBtn, input[type="submit"] {
   font-family: RNS_Camelia, Times, serif;
-  font-size: 20px;
+  font-size: 2em;
   line-height: 150%;
   color: #E6E7E8; }
 
-/* line 76, /Users/FatemahManji/GitHub/portfolioApp/src/assets/styles/index.sass */
-.caption h3, .caption p, input[type="text"] {
-  font-family: CaviarDreams, Helvetica, sans-serif; }
+/* line 80, /Users/FatemahManji/GitHub/portfolioApp/src/assets/styles/index.sass */
+.caption h3, .caption p, .aboutText p, input[type="text"], h3.swahili {
+  font-family: CaviarDreams, Helvetica, sans-serif;
+  line-height: 150%;
+  font-size: 1.5em; }
 
-/* line 81, /Users/FatemahManji/GitHub/portfolioApp/src/assets/styles/index.sass */
+/* line 85, /Users/FatemahManji/GitHub/portfolioApp/src/assets/styles/index.sass */
+.aboutText p {
+  font-size: 1.5em;
+  padding-bottom: 10px; }
+
+/* line 89, /Users/FatemahManji/GitHub/portfolioApp/src/assets/styles/index.sass */
+h3.swahili {
+  font-size: 3em; }
+
+/* line 92, /Users/FatemahManji/GitHub/portfolioApp/src/assets/styles/index.sass */
+h3 span.smltext {
+  font-size: 0.5em; }
+
+/* line 95, /Users/FatemahManji/GitHub/portfolioApp/src/assets/styles/index.sass */
+p span.smltext {
+  font-size: 0.75em;
+  color: #82BC00; }
+
+/* line 100, /Users/FatemahManji/GitHub/portfolioApp/src/assets/styles/index.sass */
+q.quote {
+  font-family: CaviarDreamsBold, Helvetica, sans-serif;
+  font-size: 1em;
+  color: #82BC00; }
+
+/* line 107, /Users/FatemahManji/GitHub/portfolioApp/src/assets/styles/index.sass */
 .header, .main, .footer {
   width: 100%;
   display: block; }
 
-/* line 85, /Users/FatemahManji/GitHub/portfolioApp/src/assets/styles/index.sass */
+/* line 111, /Users/FatemahManji/GitHub/portfolioApp/src/assets/styles/index.sass */
 .nav {
   background: black;
   opacity: 0.8;
@@ -77,68 +103,68 @@ a {
   width: 100%;
   z-index: 500; }
 
-/* line 93, /Users/FatemahManji/GitHub/portfolioApp/src/assets/styles/index.sass */
+/* line 119, /Users/FatemahManji/GitHub/portfolioApp/src/assets/styles/index.sass */
 .navlogoPos {
   float: left;
   padding-top: 8px; }
 
-/* line 97, /Users/FatemahManji/GitHub/portfolioApp/src/assets/styles/index.sass */
+/* line 123, /Users/FatemahManji/GitHub/portfolioApp/src/assets/styles/index.sass */
 .logoNav {
   position: fixed; }
 
-/* line 101, /Users/FatemahManji/GitHub/portfolioApp/src/assets/styles/index.sass */
+/* line 127, /Users/FatemahManji/GitHub/portfolioApp/src/assets/styles/index.sass */
 .wrapper2 ul {
   position: relative;
   left: 200px; }
-  /* line 104, /Users/FatemahManji/GitHub/portfolioApp/src/assets/styles/index.sass */
+  /* line 130, /Users/FatemahManji/GitHub/portfolioApp/src/assets/styles/index.sass */
   .wrapper2 ul li {
     display: inline-block;
     list-style: none; }
-    /* line 107, /Users/FatemahManji/GitHub/portfolioApp/src/assets/styles/index.sass */
+    /* line 133, /Users/FatemahManji/GitHub/portfolioApp/src/assets/styles/index.sass */
     .wrapper2 ul li a {
       padding: 30px 60px; }
 
-/* line 110, /Users/FatemahManji/GitHub/portfolioApp/src/assets/styles/index.sass */
+/* line 136, /Users/FatemahManji/GitHub/portfolioApp/src/assets/styles/index.sass */
 .home {
   height: 800px;
   width: 100%;
   background-image: url(../images/backgroundPattern.png); }
 
-/* line 115, /Users/FatemahManji/GitHub/portfolioApp/src/assets/styles/index.sass */
+/* line 141, /Users/FatemahManji/GitHub/portfolioApp/src/assets/styles/index.sass */
 .logo {
   padding-top: 10%;
   float: left; }
 
-/* line 119, /Users/FatemahManji/GitHub/portfolioApp/src/assets/styles/index.sass */
+/* line 145, /Users/FatemahManji/GitHub/portfolioApp/src/assets/styles/index.sass */
 .logo2 {
   width: 100%; }
 
-/* line 122, /Users/FatemahManji/GitHub/portfolioApp/src/assets/styles/index.sass */
+/* line 148, /Users/FatemahManji/GitHub/portfolioApp/src/assets/styles/index.sass */
 .headText {
   float: left;
   padding-top: 3%;
   margin: 10% 0 10% 3%;
   width: 55%; }
 
-/* line 128, /Users/FatemahManji/GitHub/portfolioApp/src/assets/styles/index.sass */
+/* line 154, /Users/FatemahManji/GitHub/portfolioApp/src/assets/styles/index.sass */
 .headText h1 {
   padding-bottom: 5%;
   color: white; }
 
-/* line 132, /Users/FatemahManji/GitHub/portfolioApp/src/assets/styles/index.sass */
+/* line 158, /Users/FatemahManji/GitHub/portfolioApp/src/assets/styles/index.sass */
 .aboutBtn {
   padding: 3%;
   border: 2px white solid;
   margin-top: 8.5%; }
 
-/* line 138, /Users/FatemahManji/GitHub/portfolioApp/src/assets/styles/index.sass */
+/* line 164, /Users/FatemahManji/GitHub/portfolioApp/src/assets/styles/index.sass */
 .mywork {
   background: #EFEFEF;
   height: 800px;
   display: block;
   float: none; }
 
-/* line 144, /Users/FatemahManji/GitHub/portfolioApp/src/assets/styles/index.sass */
+/* line 170, /Users/FatemahManji/GitHub/portfolioApp/src/assets/styles/index.sass */
 .figure {
   width: 250px;
   height: 250px;
@@ -148,7 +174,7 @@ a {
   float: left;
   margin: 15px 0 15px 30px; }
 
-/* line 153, /Users/FatemahManji/GitHub/portfolioApp/src/assets/styles/index.sass */
+/* line 179, /Users/FatemahManji/GitHub/portfolioApp/src/assets/styles/index.sass */
 .caption {
   position: absolute;
   background: rgba(0, 0, 0, 0.5);
@@ -157,40 +183,47 @@ a {
   bottom: -85px;
   transition: all, 0.5s; }
 
-/* line 162, /Users/FatemahManji/GitHub/portfolioApp/src/assets/styles/index.sass */
+/* line 188, /Users/FatemahManji/GitHub/portfolioApp/src/assets/styles/index.sass */
 .figure:hover .caption {
   bottom: -5px;
   /* put transition here, give hover only for 2 seconds transition */
   transition: all, 0.5s; }
 
-/* line 168, /Users/FatemahManji/GitHub/portfolioApp/src/assets/styles/index.sass */
+/* line 194, /Users/FatemahManji/GitHub/portfolioApp/src/assets/styles/index.sass */
 .aboutText {
   width: 52%;
-  padding-left: 2%;
-  float: left; }
+  margin-top: 7%;
+  padding-left: 3%;
+  float: left;
+  color: grey; }
 
-/* line 173, /Users/FatemahManji/GitHub/portfolioApp/src/assets/styles/index.sass */
+/* line 201, /Users/FatemahManji/GitHub/portfolioApp/src/assets/styles/index.sass */
 .pic {
+  margin-top: 4%;
   width: 37.5%;
   float: left;
   padding: 10px;
-  border: 2px dotted grey;
+  border: 2px dotted #82BC00;
   border-radius: 300px; }
 
-/* line 180, /Users/FatemahManji/GitHub/portfolioApp/src/assets/styles/index.sass */
+/* line 209, /Users/FatemahManji/GitHub/portfolioApp/src/assets/styles/index.sass */
 .myPic {
   border: 2px solid black;
   border-radius: 300px; }
 
-/* line 186, /Users/FatemahManji/GitHub/portfolioApp/src/assets/styles/index.sass */
+/* line 213, /Users/FatemahManji/GitHub/portfolioApp/src/assets/styles/index.sass */
 .profile {
-  font-size: 3.5em; }
+  font-size: 2em; }
 
-/* line 189, /Users/FatemahManji/GitHub/portfolioApp/src/assets/styles/index.sass */
-.profileName, .swahili {
+/* line 216, /Users/FatemahManji/GitHub/portfolioApp/src/assets/styles/index.sass */
+.profileName {
   padding-bottom: 5%; }
 
-/* line 197, /Users/FatemahManji/GitHub/portfolioApp/src/assets/styles/index.sass */
+/* line 219, /Users/FatemahManji/GitHub/portfolioApp/src/assets/styles/index.sass */
+h3.swahili {
+  padding-bottom: 2%; }
+
+/* line 225, /Users/FatemahManji/GitHub/portfolioApp/src/assets/styles/index.sass */
 .footer {
   background: #00ADEE;
   color: white;
