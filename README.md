@@ -31,3 +31,7 @@ then added the content for each page in place of {{{content}}}
 
 ##CSS
 style the pages.
+
+##LINKS
+some links direct to old site 
+and some are underproduction. :(
