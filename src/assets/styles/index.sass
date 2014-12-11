@@ -88,7 +88,7 @@ a
 .wrapper2 ul li a,
 .aboutBtn,
 .workBtn,
-input[type="submit"]
+button[type="submit"]
   font-family: RNS_Camelia, Times, serif
   font-size: 2em
   line-height:150%
@@ -98,7 +98,9 @@ input[type="submit"]
 .caption p,
 .aboutText p,
 input[type="text"],
-h3.swahili
+textarea,
+h3.swahili,
+footer
   font-family: CaviarDreams, Helvetica, sans-serif
   line-height:150%
   font-size: 1.5em
@@ -117,11 +119,15 @@ p span.smltext
   font-size:0.75em
   color:$green
 
-
 q.quote
   font-family: CaviarDreamsBold, Helvetica, sans-serif
   font-size:1em
   color:$green
+
+.contact h1
+  font-family: RNS_Camelia, Times, serif
+  font-size:4em
+  text-align:center
 
 
 // -----------------------------
@@ -159,6 +165,22 @@ q.quote
       list-style: none
       a
         padding: 30px 60px
+
+ul li a:hover
+  text-decoration: underline
+  transition: all, 1s
+  width:100%
+  height:100%
+
+a.blue:hover
+  background:$blue
+
+a.green:hover
+  background:$green
+
+a.red:hover
+  background:red
+
 
 // -----------------------------
 // home styling
@@ -256,6 +278,46 @@ h3.swahili
   padding-bottom:2%
 
 
+// -----------------------------
+// contact Page
+// -----------------------------
+.socialMedia
+  float:left
+  padding-left:20%
+  width:50%
+
+.form
+  width:40%
+  float:left
+  padding-top: 3%;
+
+input[type="text"]
+  border: 1px solid #909090
+  margin-bottom: 4%
+  font-size: 2em
+  width: 96%
+  color: #585858
+  padding: 5% 2%
+
+textarea.comment
+  width:96%
+  padding: 5% 2% 25% 2%
+  font-size: 2em
+  margin-bottom: 4%
+
+button[type="submit"].sendBtn
+  width: 96%
+  background-color: $green
+  font-weight: bold
+  padding: 5% 2%
+
+button[type="submit"].sendBtn:hover 
+  font-weight: bolder
+  background-color: #000
+  color: #fff
+  transition: all, 2s
+  cursor:pointer
+
 
 // -----------------------------
 // Footer
@@ -265,10 +327,5 @@ h3.swahili
   background: $blue
   color:white
   text-align:center
-  padding: 40px
-  height:20px
-  //p
-    //margin: 0
-   // padding: 0
-    //font-size: 12px
-
+  padding:20px 0 60px 0
+  height:30px

@@ -26,11 +26,11 @@ html
           img(class="logoNav" src="assets/images/logos/navLogoWhite.png" alt="Personal Logo")
         ul
 
-          li: a(href="/mywork") My Works
+          li: a(class="blue" href="/mywork") My Works
 
-          li: a(href="/about") About
+          li: a(class="green" href="/about") About
 
-          li: a(href="/contact") Contact
+          li: a(class="red" href="/contact") Connect
 
     //- header.header
       
@@ -153,7 +153,25 @@ html
   //- ----------------- about Complete --------------
 
   script#contact(type="text/template").
-    <div class="page contact">{{{content}}}</div>
+    <div class="page contact">
+      <div class="wrapper">
+        <h1>Lets Connect</h1>
+        <ul class="socialMedia">
+          <li><a href="mailto:fatemahmanji@gmail.com"><img src="assets/images/icons/mailIcon.png" alt="mail_icon"/></li>
+          <li><a href="http://ca.linkedin.com/pub/fatemah-manji/3a/23b/26/"><img src="assets/images/icons/linkedIcon.png" alt="linkedIn_icon"/></a></li>
+          <li><a href="#"><img src="assets/images/icons/githubIcon.png" alt="github_icon"/></a></li>
+          <li><a href="#"><img src="assets/images/icons/nounprojectIcon.png" alt="nounproject_icon"/></a></li>
+          <li class="resume"><a href="#"><img src="assets/images/icons/resumeIcon.png" alt="resume_icon"/>View Resume</a></li>        
+        </ul>
+
+        <form class="form">
+          <input class="name" type="text" placeholder="Full Name" name="user_name">
+          <input class="email" type="text" placeholder="Email" name="user_email">
+          <textarea class="comment" placeholder="Comment" name="user_message"></textarea>
+          <button class="sendBtn" type="submit">Connect</button>
+        </form>
+      </div>  
+    </div>
 
   //- ----------------- contact Complete --------------
 
