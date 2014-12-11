@@ -22,3 +22,12 @@
 - [Gulp Reaname](https://www.npmjs.org/package/gulp-rename)
 - [Gulp Jade](https://www.npmjs.org/package/gulp-jade)
 
+##HTML
+Start by adding navigation links and refrencing in main.js
+
+script#home(type="text/template").    
+<!-- <div class="page home">{{{content}}}</div>-->
+then added the content for each page in place of {{{content}}}
+
+##CSS
+style the pages.
